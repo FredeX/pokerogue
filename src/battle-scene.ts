@@ -162,6 +162,7 @@ export default class BattleScene extends SceneBase {
   public arenaEnemy: ArenaBase;
   public arenaNextEnemy: ArenaBase;
   public arena: Arena;
+
   public gameMode: GameMode;
   public score: integer;
   public lockModifierTiers: boolean;

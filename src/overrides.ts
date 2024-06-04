@@ -34,17 +34,17 @@ export const STARTING_BIOME_OVERRIDE: Biome = Biome.TOWN;
 export const ARENA_TINT_OVERRIDE: TimeOfDay = null;
 // Multiplies XP gained by this value including 0. Set to null to ignore the override
 export const XP_MULTIPLIER_OVERRIDE: number = null;
-export const IMMEDIATE_HATCH_EGGS_OVERRIDE: boolean = false;
+export const IMMEDIATE_HATCH_EGGS_OVERRIDE: boolean = true;
 // default 1000
 export const STARTING_MONEY_OVERRIDE: integer = 0;
 export const POKEBALL_OVERRIDE: { active: boolean, pokeballs: PokeballCounts } = {
-  active: false,
+  active: true,
   pokeballs: {
     [PokeballType.POKEBALL]: 5,
     [PokeballType.GREAT_BALL]: 0,
     [PokeballType.ULTRA_BALL]: 0,
     [PokeballType.ROGUE_BALL]: 0,
-    [PokeballType.MASTER_BALL]: 0,
+    [PokeballType.MASTER_BALL]: 10,
   }
 };
 
@@ -109,4 +109,4 @@ export const STARTING_MODIFIER_OVERRIDE: Array<ModifierOverride> = [];
 export const OPP_MODIFIER_OVERRIDE: Array<ModifierOverride> = [];
 
 export const STARTING_HELD_ITEMS_OVERRIDE: Array<ModifierOverride> = [];
-export const OPP_HELD_ITEMS_OVERRIDE: Array<ModifierOverride> = [];
+export const OPP_HELD_ITEMS_OVERRIDE: Array<ModifierOverride> = [{name: "BERRY", count: 5, type: BerryType.SITRUS},{name: "BERRY", count: 5, type: BerryType.APICOT},{name: "BERRY", count: 5, type: BerryType.PETAYA},{name: "BERRY", count: 5, type: BerryType.STARF}];
